@@ -5,7 +5,128 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.example.kotlincustomview.view.CircleBar
-        android:layout_width="300dip"
-        android:layout_height="300dip" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y525"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 lbs"
+                android:textColor="@color/color_ff556170"
+                android:textSize="@dimen/x40" />
+
+            <com.example.kotlincustomview.view.CircleBarTo
+                android:id="@+id/weightCB"
+                android:layout_width="@dimen/x164"
+                android:layout_height="@dimen/x164"
+                android:layout_marginTop="@dimen/y24"
+                app:CircleBar_color="@color/color_ff74499a"
+                app:CircleBar_progress="70" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y36"
+                android:text="70%"
+                android:textColor="@color/color_ff23252d"
+                android:textSize="@dimen/x40" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y20"
+                android:text="lose:10 lbs"
+                android:textColor="@color/color_ff898990"
+                android:textSize="@dimen/x40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 000"
+                android:textColor="@color/color_ff556170"
+                android:textSize="@dimen/x40" />
+
+            <com.example.kotlincustomview.view.CircleBarTo
+                android:id="@+id/stepsCB"
+                android:layout_width="@dimen/x164"
+                android:layout_height="@dimen/x164"
+                android:layout_marginTop="@dimen/y24"
+                app:CircleBar_color="@color/color_ff4253a3"
+                app:CircleBar_progress="80" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y36"
+                android:text="80%"
+                android:textColor="@color/color_ff23252d"
+                android:textSize="@dimen/x40" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y20"
+                android:text="total:8 000"
+                android:textColor="@color/color_ff898990"
+                android:textSize="@dimen/x40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 600"
+                android:textColor="@color/color_ff556170"
+                android:textSize="@dimen/x40" />
+
+            <com.example.kotlincustomview.view.CircleBarTo
+                android:id="@+id/caloriesCB"
+                android:layout_width="@dimen/x164"
+                android:layout_height="@dimen/x164"
+                android:layout_marginTop="@dimen/y24"
+                app:CircleBar_color="@color/color_ff1eaad4"
+                app:CircleBar_progress="90" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y36"
+                android:text="90%"
+                android:textColor="@color/color_ff23252d"
+                android:textSize="@dimen/x40" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y20"
+                android:text="total:3696"
+                android:textColor="@color/color_ff898990"
+                android:textSize="@dimen/x40" />
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>
