@@ -13,8 +13,8 @@ class CircleBarActivity : BaseActivity() {
     }
 
     override fun initView() {
-        weightCB.update(70, 500);
-        stepsCB.update(80, 800);
-        caloriesCB.update(90, 1000);
+        weightCB.update(70, 500)
+        stepsCB.update(80, 800)
+        caloriesCB.update(90, 1000)
     }
 }

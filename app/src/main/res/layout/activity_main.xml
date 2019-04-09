@@ -7,19 +7,8 @@
     android:orientation="vertical"
     tools:context="com.example.kotlincustomview.ui.MainActivity">
 
-    <Button
-        android:id="@+id/miam_RippleView"
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="涟漪"/>
-    <Button
-        android:id="@+id/miam_CircleBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="进度圆"/>
-    <Button
-        android:id="@+id/miam_CircleBar1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="援助"/>
+        android:layout_height="wrap_content" />
 </LinearLayout>
