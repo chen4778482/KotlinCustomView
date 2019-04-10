@@ -95,9 +95,9 @@ class YuanJiaoHeng : View {
             var rectrf = RectF(10f, 10f, x, heigh - 10f)
             canvas.drawRoundRect(rectrf, 30f, 30f, mLinePaint1)
 
-            val leftTxtHeight = Math.abs(ViewUtil.getFontHeight(mLinePaint2)) / 2
-            val textWidth = Math.abs(mLinePaint2!!.measureText("12")) / 2
-            val wi = (x - textWidth - 50f) * progress
+            var leftTxtHeight = Math.abs(ViewUtil.getFontHeight(mLinePaint2)) / 2
+            var textWidth = Math.abs(mLinePaint2!!.measureText("12")) / 2
+            var wi = (x - textWidth - 50f) * progress
 
             if (number != null) {
                 canvas.drawText(number, wi, heigh / 2 + leftTxtHeight, mLinePaint2)

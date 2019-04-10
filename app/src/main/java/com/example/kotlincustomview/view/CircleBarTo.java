@@ -23,7 +23,7 @@ public class CircleBarTo extends View {
     private Paint mColorWheelPaint;//进度条的画笔
     private Paint mColorWheelPaintCentre;
     private Paint mTextPaint;
-    private float circleStrokeWidth;
+    private float circleStrokeWidth;//圆笔画宽度
     private float circleBgStrokeWidth;
     private float mSweepAnglePer;
     private int progress = 0;
@@ -124,11 +124,13 @@ public class CircleBarTo extends View {
         int width = getDefaultSize(getSuggestedMinimumWidth(), widthMeasureSpec);
         int min = Math.min(width, height);// 获取View最短边的长度
         setMeasuredDimension(min, min);// 强制改View为以最短边为长度的正方形
+
         float pressExtraStrokeWidth = Textscale(2, min);// 圆弧离矩形的距离
         mColorWheelRectangle.set(circleStrokeWidth + pressExtraStrokeWidth,
                 circleStrokeWidth + pressExtraStrokeWidth, min
                         - circleStrokeWidth - pressExtraStrokeWidth, min
                         - circleStrokeWidth - pressExtraStrokeWidth);// 设置矩形
+
         mColorWheelPaint.setStrokeWidth(circleStrokeWidth);
         mColorWheelPaintCentre.setStrokeWidth(circleBgStrokeWidth);
     }
