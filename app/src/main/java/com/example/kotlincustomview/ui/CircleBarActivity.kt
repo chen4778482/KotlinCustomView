@@ -16,6 +16,6 @@ class CircleBarActivity : BaseActivity() {
         weightCB.update(70, 500)
         stepsCB.update(80, 800)
         caloriesCB.update(90, 1000)
-        mCircleBarView
+        mCircleBarView.update(50,3000)
     }
 }

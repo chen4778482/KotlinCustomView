@@ -31,7 +31,10 @@
                 android:layout_height="@dimen/x164"
                 android:layout_marginTop="@dimen/y24"
                 app:CircleBar_color="@color/color_ff74499a"
-                app:CircleBar_progress="70" />
+                app:CircleBar_forward="true"
+                app:CircleBar_progress="70"
+                app:CircleBar_showProgress_txt="true"
+                app:CircleBar_start_angle="-90" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -130,8 +133,13 @@
         </LinearLayout>
 
     </LinearLayout>
+
     <com.example.kotlincustomview.view.CircleBarView
         android:id="@+id/mCircleBarView"
         android:layout_width="@dimen/x300"
-        android:layout_height="@dimen/x300" />
+        android:layout_height="@dimen/x300"
+        app:CircleBarView_forward="true"
+        app:CircleBarView_progress="70"
+        app:CircleBarView_showProgress_txt="true"
+        app:CircleBarView_start_angle="0" />
 </LinearLayout>
